@@ -151,16 +151,18 @@ button:hover {
 .dark-mode .edu-left {
     flex: 1;
     font-weight: bold;
-    color: #ffffff;
+    color: #f1eeee;
     font-size: 16px;
     text-align: right;
-    margin-right: 20px;
+    margin-left: 0px;
+    margin-right: 100px;
 }
 
 .dark-mode .edu-right {
     flex: 2;
     font-size: 16px;
-    color: #efeaea;
+    color: #ffffff;
+    margin-left: 10px;
 }
 
 .dark-mode .resume-wrapper {

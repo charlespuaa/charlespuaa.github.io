@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/style.css" />
+    <title>PUA Resume</title>
+  </head>
+  <body>
+    <div class="resume-wrapper">
+      <button onclick="toggleTheme()">Toggle Theme</button>
+      <header class="header">
+        <div class="profile-pic">
+          <img src="assets/pua.jpeg" alt="Profile Picture" />
+        </div>
+        <div class="profile-details">
+          <h1>Charles Michael Pua</h1>
+          <p>BSIT - Web and Mobile Applications</p>
+          <p>Caloocan, Philippines</p>
+          <p>Email: charlespuasdf@gmail.com</p>
+          <p>Mobile: 09766491851</p>
+        </div>
+      </header>
+
+      <section class="about">
+        <h2>About Me</h2>
+        <p>
+          A dedicated student with a passion for learning new technologies,
+          strong problem-solving skills, and a commitment to working and
+          striving for growth.
+        </p>
+      </section>
+
+      <div class="content">
+        <section class="education">
+          <h2>Academic Background</h2>
+          <div class="education-entry">
+            <div class="edu-left"><i>College &nbsp; &nbsp; &nbsp;</i></div>
+            <div class="edu-right">
+              FEU Institute of Technology <br />
+              BSIT - Web and Mobile Applications <br />
+              (2023 - Present)
+            </div>
+          </div>
+          <div class="education-entry">
+            <div class="edu-left">
+              <i>Senior High School&nbsp;&nbsp;&nbsp;</i>
+            </div>
+            <div class="edu-right">
+              Arellano University - JAS Campus <br />
+              ICT Strand <br />
+              (2021 - 2023)
+            </div>
+          </div>
+          <div class="education-entry">
+            <div class="edu-left">
+              <i>Junior High School&nbsp;&nbsp;&nbsp;</i>
+            </div>
+            <div class="edu-right">
+              Systems Plus Computer College <br />
+              (2017 - 2021)
+            </div>
+          </div>
+          <div class="education-entry">
+            <div class="edu-left"><i>Primary School&nbsp;&nbsp;&nbsp;</i></div>
+            <div class="edu-right">
+              Systems Plus Computer College <br />
+              (2011 - 2017)
+            </div>
+          </div>
+
+          <h2>Skills</h2>
+          <ul class="skills-list">
+            <li>&nbsp;&nbsp;HTML, CSS, JavaScript</li>
+            <li>&nbsp;&nbsp;C++, Java</li>
+            <li>&nbsp;&nbsp;Adobe Photoshop</li>
+            <li>&nbsp;&nbsp;Microsoft Office</li>
+            <li>&nbsp;&nbsp;Video Editing</li>
+          </ul>
+        </section>
+      </div>
+
+      <script>
+        function toggleTheme() {
+          document.body.classList.toggle("dark-mode");
+        }
+      </script>
+    </div>
+  </body>
+</html>

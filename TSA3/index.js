@@ -1,4 +1,4 @@
-// Get references to the display and all buttons
+
 const display = document.querySelector('.screen');
 const btns = document.querySelectorAll('.buttons button');
 
@@ -11,14 +11,14 @@ btns.forEach(btn => {
   btn.addEventListener('click', () => {
     const val = btn.getAttribute('data-val');
     
-    //  add to currentInput
+    // num or dot
     if (btn.classList.contains('num') || val === '.') {
       currentInput += val;
       display.value = currentInput;
     }
     // if opr
     else if (btn.classList.contains('opr')) {
-      // When 'C' is pressed: clear and toggle dark mode
+      // dark mode pag pinindot c
       if (val === 'C') {
         darkMode = !darkMode;
         if (darkMode) {
@@ -26,18 +26,18 @@ btns.forEach(btn => {
         } else {
           document.body.classList.remove('dark');
         }
-        // clear calc
+        // clear C
         currentInput = '';
         firstNum = null;
         op = null;
         display.value = '';
       }
-      // backspace
+      // backspace (<)
       else if (val === '<') {
         currentInput = currentInput.slice(0, -1);
         display.value = currentInput;
       }
-      // equals
+      // equal - and change background color
       else if (val === '=') {
         if (firstNum !== null && op && currentInput !== '') {
           const secondNum = parseFloat(currentInput);
@@ -46,6 +46,8 @@ btns.forEach(btn => {
           currentInput = result.toString();
           firstNum = null;
           op = null;
+          
+          changeBackgroundColor();
         }
       }
       // other ops
@@ -69,4 +71,17 @@ function compute(a, b, operator) {
     case '/': return b !== 0 ? a / b : 'Error';
     default: return b;
   }
+}
+
+
+function changeBackgroundColor() {
+  const backgrounds = [
+    "rgba(255, 255, 255, 0.85)",
+    "rgba(220, 240, 189, 0.85)",
+    "rgba(222, 183, 183, 0.85)",
+    "rgba(213, 223, 251, 0.85)",
+    "rgba(187, 249, 211, 0.85)"
+  ];
+  const randIndex = Math.floor(Math.random() * backgrounds.length);
+  document.body.style.background = backgrounds[randIndex];
 }

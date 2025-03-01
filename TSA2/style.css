@@ -145,11 +145,12 @@ h3{
 .moving-box {
     position: absolute;             
     left: 60%;                      
+    width: 200px; 
     height: 200px;                  
     border-radius: 10px;
-    transition: top 1.5s ease-in-out, 
-                background-color 1s ease, 
-                opacity 1s ease;
+    transition: top 1.6s ease-in-out, 
+                background-color 0.5s ease, 
+                opacity 2s ease;
                
                 
   }

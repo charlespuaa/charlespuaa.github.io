@@ -143,10 +143,9 @@ h3{
 
 
 .moving-box {
-    position: absolute;             /* So we can position it within .container */
-    left: 60%;                      /* Adjust as needed to place it on the right */
-    width: 200px; 
-    height: 200px;                  /* Example dimensions */
+    position: absolute;             
+    left: 60%;                      
+    height: 200px;                  
     border-radius: 10px;
     transition: top 1.5s ease-in-out, 
                 background-color 1s ease, 

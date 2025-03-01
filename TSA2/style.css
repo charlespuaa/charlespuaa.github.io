@@ -1,163 +1,146 @@
 * {
     font-family: Arial, Helvetica, sans-serif;
-    
     margin: 0;
-    position: relative;
-    
-}
-
-body{
-    background-color: white);
-}
-
-.container {
-    margin: 20px auto 0 auto; /* top = 100px, left/right = auto, bottom = 0 */
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: white;
+    overflow: hidden; /* Hide scrollbars */
+  }
+  
+  .container {
+    margin: 20px auto; /* 20px top and bottom */
     width: 60%;
-    padding: 50px;
+    height: 20%; /* Subtract the 20px top and bottom margins */
+    padding: 20px;  /* Reduced padding */
     border: 5px solid #00ffa2;
     background-color: rgba(64, 58, 29, 0.955);
     border-radius: 30px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: flex-start; /* align all to the left */
-    position: relative; 
-}
-
-hr{
+    justify-content: center; /* Vertically center content */
+    align-items: flex-start;
+    position: relative;
+  }
+  
+  .headtext {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  hr {
     width: 100%;
     border: 3px solid #00ffa2;
-}
-.container h4 {
-    margin-top: 10px;
+  }
+  
+  .container h4 {
     text-align: center;
-    font-size: 15px;;
-    color: rgb(194, 166, 111); 
-}
-
-.container h1 { /*Days of the week*/
-    
+    font-size: 15px;
+    color: rgb(194, 166, 111);
+  }
+  
+  .container h1 {
     text-align: center;
     font-size: 36px;
     color: rgb(214, 158, 90);
-      
-}
-
-.headtext {
-    width: 100%;
-    text-align: center;
-}
-
-.header {
-    margin-left: 30px;
+  }
+  
+  .header {
+    margin-left: 50px;
     display: flex;
-    flex-direction: column;       /* Stack buttons*/
-    align-items: flex-start;        /* align buttons to the left */
-    gap: 5px;
-}
-
-button {
-    float: left;            /* Buttons stay on the left side */       /* Or whatever width you want for buttons column */
-    background-color: none;
-    display: inline-block;
     flex-direction: column;
-    justify-content: center;
+    align-items: flex-start;
     gap: 5px;
-    padding: 0%;
+  }
+  
+  button {
+    float: left;
+    background-color: transparent;
+    display: inline-block;
+    padding: 0;
     cursor: pointer;
     border: none;
     width: 100%;
-}
-
-p{
-    margin: 10px;
+  }
+  
+  p {
+    padding: 0px;
     font-size: 15px;
     color: rgb(26, 21, 11);
     text-align: center;
-}
-
-.week {
+  }
+  
+  .week {
     background: none;
     border: 3px solid transparent;
     box-sizing: border-box;
     transition: transform 0.6s ease, border-color 0.6s ease;
     background-clip: padding-box;
-}
-
-.week:hover {
+  }
+  
+  .week:hover {
     transform: scale(1.1);
     transition: 0.5s;
-    border-color: transparent;
-}
-
-h3{
+  }
+  
+  h3 {
     font-size: 24px;
     text-align: center;
-    padding: 15px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 15px 20px;
     border-radius: 20px;
-}
-
-.Mon h3 {
+  }
+  
+  .Mon h3 {
     color: #1E3D59;
     background-color: #A8C0D8;
     border: 4px solid #5B7992;
-    border-radius: 20px;
-}
-
-.Tue h3 {
+  }
+  
+  .Tue h3 {
     color: #3A5A40;
     background-color: #A3B18A;
     border: 4px solid #588157;
-    border-radius: 20px;
-}
-
-.Wed h3 {
+  }
+  
+  .Wed h3 {
     color: #7A4E26;
     background-color: #E4C59E;
     border: 4px solid #C29D75;
-    border-radius: 20px;
-}
-
-.Thur h3 {
+  }
+  
+  .Thur h3 {
     color: #8C4A3A;
     background-color: #D08C60;
     border: 4px solid #BF6F50;
-    border-radius: 20px;
-}
-
-.Fri h3 {
+  }
+  
+  .Fri h3 {
     color: #3B2F2F;
     background-color: #9E6B3F;
     border: 4px solid #6D4A33;
-    border-radius: 20px;
-}
-
-.Sat h3 {
+  }
+  
+  .Sat h3 {
     color: #6D2932;
     background-color: #D88C9A;
     border: 4px solid #B56576;
-    border-radius: 20px;
-}
-
-.Sun h3 {
+  }
+  
+  .Sun h3 {
     color: #9B341F;
     background-color: #f4a261;
     border: 4px solid #d77a3d;
-    border-radius: 20px;
-}
-
-
-.moving-box {
-    position: absolute;             
-    left: 60%;                      
-    width: 200px; 
-    height: 200px;                  
-    border-radius: 10px;
-    transition: top 1.6s ease-in-out, 
-                background-color 0.5s ease, 
-                opacity 2s ease;
-               
-                
   }
+  
+  .moving-box {
+    position: absolute;
+    left: 60%;
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    transition: top 1.6s ease-in-out, background-color 0.5s ease, opacity 2s ease;
+  }
+  

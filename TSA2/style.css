@@ -1,0 +1,141 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    
+    margin: 0;
+    position: relative;
+    
+}
+
+body{
+    background-color: white);
+}
+
+.container {
+    margin: 20px auto 0 auto; /* top = 100px, left/right = auto, bottom = 0 */
+    width: 80%;
+    padding: 50px;
+    border: 5px solid #00ffa2;
+    background-color: rgba(64, 58, 29, 0.955);
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; /* align all to the left */
+}
+
+hr{
+    width: 100%;
+    border: 3px solid #00ffa2;
+}
+.container h4 {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 15px;;
+    color: rgb(194, 166, 111); 
+}
+
+.container h1 { /*Days of the week*/
+    
+    text-align: center;
+    font-size: 36px;
+    color: rgb(214, 158, 90);
+      
+}
+
+.headtext {
+    width: 100%;
+    text-align: center;
+}
+
+.header {
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;       /* Stack buttons*/
+    align-items: flex-start;        /* align buttons to the left */
+    gap: 5px;
+}
+
+button {
+   
+    background-color: none;
+    display: inline-block;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    padding: 0%;
+    cursor: pointer;
+    border: none;
+    width: 100%;
+}
+
+.week {
+    background: none;
+    border: 3px solid transparent;
+    box-sizing: border-box;
+    transition: transform 0.6s ease, border-color 0.6s ease;
+    background-clip: padding-box;
+}
+
+.week:hover {
+    transform: scale(1.05);
+    transition: 0.5s;
+    border-color: transparent;
+}
+
+h3{
+    font-size: 24px;
+    text-align: center;
+    padding: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 20px;
+}
+
+.Mon h3 {
+    color: #1E3D59;
+    background-color: #A8C0D8;
+    border: 4px solid #5B7992;
+    border-radius: 20px;
+}
+
+.Tue h3 {
+    color: #3A5A40;
+    background-color: #A3B18A;
+    border: 4px solid #588157;
+    border-radius: 20px;
+}
+
+.Wed h3 {
+    color: #7A4E26;
+    background-color: #E4C59E;
+    border: 4px solid #C29D75;
+    border-radius: 20px;
+}
+
+.Thur h3 {
+    color: #8C4A3A;
+    background-color: #D08C60;
+    border: 4px solid #BF6F50;
+    border-radius: 20px;
+}
+
+.Fri h3 {
+    color: #3B2F2F;
+    background-color: #9E6B3F;
+    border: 4px solid #6D4A33;
+    border-radius: 20px;
+}
+
+.Sat h3 {
+    color: #6D2932;
+    background-color: #D88C9A;
+    border: 4px solid #B56576;
+    border-radius: 20px;
+}
+
+.Sun h3 {
+    color: #9B341F;
+    background-color: #f4a261;
+    border: 4px solid #d77a3d;
+    border-radius: 20px;
+}

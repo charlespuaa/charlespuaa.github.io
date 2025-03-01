@@ -12,7 +12,7 @@ body{
 
 .container {
     margin: 20px auto 0 auto; /* top = 100px, left/right = auto, bottom = 0 */
-    width: 65%;
+    width: 60%;
     padding: 50px;
     border: 5px solid #00ffa2;
     background-color: rgba(64, 58, 29, 0.955);
@@ -69,6 +69,13 @@ button {
     width: 100%;
 }
 
+p{
+    margin: 10px;
+    font-size: 15px;
+    color: rgb(26, 21, 11);
+    text-align: center;
+}
+
 .week {
     background: none;
     border: 3px solid transparent;
@@ -78,7 +85,7 @@ button {
 }
 
 .week:hover {
-    transform: scale(1.05);
+    transform: scale(1.1);
     transition: 0.5s;
     border-color: transparent;
 }

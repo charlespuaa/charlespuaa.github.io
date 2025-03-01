@@ -14,6 +14,8 @@ const dayColors = {
       dropBox(btn.getAttribute("data-day"));
     });
   });
+
+  
   
   function dropBox(day) {
     const cont = document.querySelector(".container");

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Philippines' Best - Traditional Dishes</title>
+
+    <!-- Google Fonts & Bootstrap -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- header section -->
+    <section class="header">
+        <div class="header-text">
+            <h1>Philippines' Best</h1>
+            <p>Discover the most iconic and flavorful dishes from the Pearl of the Orient.</p>
+            <button class="main-menu-btn" onclick="closePopup()">Main Menu</button>
+        </div>
+    </section>
+
+    <!-- dishes -->
+    <section class="featured-dishes">
+        <h2>Featured Dishes</h2>
+        <div class="dish-grid">
+            <div class="dish-card" onclick="showPopup('adobo')">
+                <img src="assets/adobo.png" alt="Adobo">
+                <h4>Adobo</h4>
+            </div>
+
+            <div class="dish-card" onclick="showPopup('sinigang')">
+                <img src="assets/sinigang.jpg"alt=Sinigang">
+                <h4>Sinigang</h4>
+            </div>
+
+            <div class="dish-card" onclick="showPopup('lechon')">
+                <img src="assets/lechon.jpg" alt="Lechon">
+                <h4>Lechon</h4>
+            </div>
+
+            <div class="dish-card" onclick="showPopup('karekare')">
+                <img src="assets/kare.jpg" alt="Kare-Kare">
+                <h4>Kare-Kare</h4>
+            </div>
+        </div>
+    </section>
+
+    <!-- pop up -->
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <h3 id="dish-title"></h3>
+            <p id="dish-description"></p>
+        </div>
+    </div>
+
+   <script>
+
+        const dishInfo = {
+            adobo: {
+                title: "Adobo",
+                description: "A savory and slightly tangy dish made with pork or chicken, soy sauce, vinegar, and garlic."
+            },
+            sinigang: {
+                title: "Sinigang",
+                description: "A sour tamarind-based soup with pork or shrimp, packed with vegetables."
+            },
+            lechon: {
+                title: "Lechon",
+                description: "A whole roasted pig with crispy skin, often served during celebrations."
+            },
+            karekare: {
+                title: "Kare-Kare",
+                description: "A peanut-based stew with oxtail, tripe, and vegetables, best paired with bagoong."
+            }
+        };
+
+        function showPopup(dish) {
+            document.getElementById("dish-title").innerText = dishInfo[dish].title;
+            document.getElementById("dish-description").innerText = dishInfo[dish].description;
+            document.getElementById("popup").style.display = "flex";
+        }
+
+        function closePopup() {
+            document.getElementById("popup").style.display = "none";
+        }
+    </script>
+
+</body>
+</html>

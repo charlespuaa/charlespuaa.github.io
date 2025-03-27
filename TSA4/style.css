@@ -1,4 +1,4 @@
-/* 🌟 Global Styles */
+
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
@@ -60,7 +60,7 @@ body {
     background: #d35400;
 }
 
-/* 🌟 Featured Dishes */
+/* dishes */
 .featured-dishes {
     text-align: center;
     padding: 50px 20px;
@@ -102,7 +102,7 @@ body {
     font-size: 1.5rem;
 }
 
-/* 🌟 Pop-up */
+/* popup */
 .popup {
     display: none;
     position: fixed;
@@ -145,7 +145,7 @@ body {
     right: 10px;
 }
 
-/* 🌟 Responsiveness */
+/* responsive */
 @media (max-width: 768px) {
     .dish-grid {
         flex-direction: column;
